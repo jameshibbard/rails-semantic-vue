@@ -21,6 +21,9 @@ import '../../assets/stylesheets/styles.css';
 
 import Vue from 'vue';
 import App from '../app.vue';
+import SuiVue from 'semantic-ui-vue';
+
+Vue.use(SuiVue);
 
 document.addEventListener('DOMContentLoaded', () => {
   const el = document.getElementById('form');
