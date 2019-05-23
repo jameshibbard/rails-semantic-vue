@@ -1,0 +1,109 @@
+html {
+  min-height: calc(100vh + 1px);
+}
+.headerGrid {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: auto 120px 102px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+}
+.aligned {
+  display:table-cell;
+  vertical-align:middle;
+}
+.logo {
+  width: 80px;
+  height: 87px;
+  padding-left: 5px;
+}
+.logo img{
+  height: 65px;
+}
+.breadcrumb-container {
+  height: 35px;
+  position: relative;
+  top: -15px;
+  background: #F7F7F7;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 3px 0 rgba(34,36,38,.25);
+  border-top: 1px solid #E8E8E8;
+}
+.breadcrumb-container .ui.breadcrumb {
+  display: block;
+  max-width: 1200px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.breadcrumb-container .ui.breadcrumb a {
+  color: rgb(119, 119, 119);;
+}
+.breadcrumb-container .ui.breadcrumb a:hover {
+  color: rgb(119, 119, 119);
+  text-decoration: underline;
+}
+.ui.vertical.footer.segment {
+  color: rgb(119, 119, 119);
+  background: #F7F7F7;
+  border-top: 1px solid #E8E8E8;text-align: justify !important;
+  margin: 5em 0em 0em;
+  padding: 5em 0em;
+}
+.list > .item{
+  margin-bottom: 10px;
+}
+.item > .content a {
+  color: rgba(0,0,0,.4);
+}
+.item > .content a:hover {
+  color: #000
+}
+.form-section {
+  background: #F7F7F7;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 3px 0 rgba(34,36,38,.25);
+  border-top: 1px solid #E8E8E;
+  margin-top: 25px;
+}
+.form-section h3, .form-section h4 {
+  color: #8dae10;
+  text-transform: uppercase;
+}
+.personal-info.form-section{
+  margin-top: 30px
+}
+.ui.form .programme.grouped.fields {
+  margin-bottom: -5px;
+}
+.required{
+  margin: -.2em 0 0 .2em;
+  color: #db2828;
+}
+/* Otherwise select with error has wrong color */
+.ui.form .field.error .ui.dropdown .default.text{
+  color: #e7bdbc;
+}
+/* Force footer to stick to the bottom of pages with sparse content
+https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.content {
+  flex:
+   1;
+}
+.ui.dropdown.quicknav > .menu{
+  left: -30px;
+  top: 30px;
+}
+.dropdown.quicknav.centered {
+  align-self: center;
+  justify-self: center;
+  top: -5px;
+}

@@ -15,6 +15,7 @@ class ApplicantsController < ApplicationController
   # GET /applicants/new
   def new
     @applicant = Applicant.new
+    @current_page = 'New Application'
   end
 
   # GET /applicants/1/edit
