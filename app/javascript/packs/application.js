@@ -18,3 +18,17 @@ require("channels");
 
 import 'semantic-ui-css/semantic.min.css';
 import '../../assets/stylesheets/styles.css';
+
+import Vue from 'vue';
+import App from '../app.vue';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.getElementById('form');
+
+  const app = new Vue({
+    el,
+    render: h => h(App)
+  });
+
+  console.log(app);
+});
